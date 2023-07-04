@@ -1,0 +1,131 @@
+\documentclass[12pt]{article}
+ 
+\addtolength{\textheight}{2.5in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.5in}
+\setlength{\parskip}{0.1in}
+\setlength{\parindent}{0.0in}
+
+\newcommand{\given}{\, | \,}
+
+\pagestyle{empty}
+
+\raggedbottom
+ 
+\begin{document}
+
+\begin{flushleft}
+
+Prof.~David Draper \\
+Department of Applied Mathematics and Statistics \\
+University of California, Santa Cruz
+
+\end{flushleft}
+
+\begin{center}
+
+\textbf{\large AMS 131: Quiz 3}
+
+\end{center}
+
+\bigskip
+
+\begin{flushleft}
+
+Name: \underline{\hspace*{5.85in}}
+
+\end{flushleft}
+
+1.~In the spring of 1993 I taught an introductory statistics class at UCLA. One of the things I did to generate data for analysis in the class was to conduct a (voluntary) survey of the students at the beginning of the quarter: I asked some demographic questions, including gender, and some political questions, including ``Are you in favor of the legalization of marijuana?'' Let's agree to code the gender variable as Female ($F$) or Male ($M$), and the marijuana legalization preference (MLP) variable as Yes ($Y$) or No ($N$). A total of 106 students responded to the survey; the results are summarized in the table below.
+
+\begin{center}
+
+\begin{tabular}{c|c|c|c}
+
+\multicolumn{1}{c}{ } & \multicolumn{2}{c}{MLP} \\
+
+\multicolumn{1}{c}{Gender} & \multicolumn{1}{c}{$Y$} &
+\multicolumn{1}{c}{$N$} & Total \\ \cline{2-3}
+
+$F$ & 29 & 20 & \, 49 \\ \cline{2-3}
+
+$M$ & 52 & \, 5 & \, 57 \\ \cline{2-3}
+
+\multicolumn{1}{c}{Total} & \multicolumn{1}{c}{81} &
+\multicolumn{1}{c}{25} & \multicolumn{1}{c}{106} \\
+
+\end{tabular}
+
+\end{center}
+
+In other words, 29 Female students said Yes (upper left cell), and there were a total of 25 people who said No (second column total).
+
+In parts (a), (b) and (c), if a student is chosen at random from these 106 survey participants,
+
+\begin{itemize}
+
+\item[(a)]
+
+What's the probability $P ( Y )$ that the chosen person responded Yes to the MLP question? Explain briefly (for example, the right denominator for this probability is $m$ because~..., and the right numerator is $n$ because~...).
+
+\vspace*{0.7in}
+
+\item[(b)]
+
+Given that the chosen person is Female, what's the conditional probability $P ( Y \given F )$ that she responded Yes? Explain briefly.
+
+\vspace*{0.7in}
+
+\item[(c)]
+
+Given that the chosen person is Male, what's the conditional probability $P ( Y \given M )$ that he responded Yes? Explain briefly. 
+
+\vspace*{0.7in}
+
+\end{itemize}
+
+\begin{center}
+
+(over)
+
+\end{center}
+
+\newpage
+
+\vspace*{0.05in}
+
+\begin{itemize}
+
+\item[(d)]
+
+Briefly explain why this demonstrates that gender and marijuana legalization preference are (probabilistically) \textit{dependent} in this data set, and briefly describe the nature of the dependence. (\textit{Hint:} What would have been true if these two variables had been \textit{independent}? Think like a Bayesian.)
+
+\vspace*{1.0in}
+
+\item[(e)]
+
+Would you describe the degree of dependence in (d) as weak, moderate or strong? Use your results in parts (a), (b) and (c) to justify your answer.
+
+\end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,147 @@
+\documentclass[12pt]{article}
+ 
+\addtolength{\textheight}{2.7in}
+\addtolength{\topmargin}{-1.15in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.65in}
+\setlength{\parskip}{0.1in}
+\setlength{\parindent}{0.0in}
+
+\newcommand{\given}{\, | \,}
+
+\pagestyle{empty}
+
+\raggedbottom
+ 
+\begin{document}
+
+\vspace*{-0.3in}
+
+\begin{flushleft}
+
+Prof.~David Draper \\
+Department of Applied Mathematics and Statistics \\
+University of California, Santa Cruz
+
+\end{flushleft}
+
+\begin{center}
+
+\textbf{\large AMS 131: Quiz 9}
+
+\end{center}
+
+\bigskip
+
+\begin{flushleft}
+
+Name: \underline{\hspace*{5.85in}}
+
+\end{flushleft}
+
+You're about to take an IID sample $( X_1, \dots, X_n )$ from a distribution with variance $V ( X_i ) = \sigma^2$ that exists and is finite, which implies that the mean $E ( X_i ) = \mu$ also exists and is finite. The purpose of the sampling is to use the sample mean $\bar{ X }_n = \frac{ 1 }{ n } \sum_{ i = 1 }^n X_i$ as an estimator of $\mu$, and you're wondering what value you should use for the sample size $n$. We've seen in class that \textit{Chebyshev's Inequality} can help when no other details about the distribution of the $X_i$ are available: if $Y$ is any random variable whose variance $V ( Y )$ exists, this inequality states that for any $t \ge 0$
+\begin{equation} \label{e:chebyshev-1}
+P ( | Y - E ( Y ) | \ge t ) \le \frac{ V ( Y ) }{ t^2 } \, .
+\end{equation}
+
+\begin{itemize}
+
+\item[(a)]
+
+Using basic facts about $E ( \bar{ X }_n )$ and $V ( \bar{ X }_n )$, show that inequality (\ref{e:chebyshev-1}) implies, in the random sampling problem considered here, that for any $k > 0$
+\begin{equation} \label{e:chebyshev-2}
+P ( | \bar{ X }_n - \mu | < k \, \sigma ) \ge 1 - \frac{ 1 }{ n \, k^2 } \, ,
+\end{equation}
+and show further that, if we want the probability in (\ref{e:chebyshev-2}) to be at least $( 1 - \alpha )$ for some $0 < \alpha < 1$, we should choose
+\begin{equation} \label{e:chebyshev-3}
+n_{ Chebyshev } \ge \frac{ 1 }{ \alpha \, k^2 } \, .
+\end{equation}
+
+\vspace*{1.1in}
+
+\end{itemize}
+
+I also mentioned in class that Chebyshev's Inequality can be quite conservative. Let's quantify this: suppose for the rest of the problem that $( X_i \given \mu \, \sigma^2 ) \stackrel{\tiny IID}{ \sim } N ( \mu, \sigma^2 )$. Then we've seen in class that $\bar{ X }_n$ also follows a Normal distribution, with mean $\mu$ and standard error $SE \left( \bar{ X }_n \right) = \frac{ \sigma }{ \sqrt{ n } }$. As usual let $\Phi ( x )$ be the standard Normal CDF; in other words, $\Phi ( x )$ is the area to the left of $x$ under the standard Normal PDF.
+
+\begin{itemize}
+
+\item[(b)]
+
+Sketch the PDF of $\bar{ X }_n$, shading in the area corresponding to $( * ) = ( 
+| \bar{ X }_n - \mu | < k \, \sigma )$ and identifying the places on both the raw-units and standard-units axes corresponding to the endpoints of $( * )$.
+
+\vspace*{1.1in}
+
+\item[(c)]
+
+Using a basic fact about $\Phi ( x )$ and your sketch in part (b), show that under the Normality assumption for the $X_i$,
+\begin{equation} \label{e:chebyshev-4}
+P ( | \bar{ X }_n - \mu | < k \, \sigma ) \ge 2 \, \Phi ( k \, \sqrt{ n } ) - 1 \, .
+\end{equation}
+
+\vspace*{1.1in}
+
+\item[(d)]
+
+Set the probability on the right-hand side of the inequality in (\ref{e:chebyshev-4}) equal to $( 1 - \alpha )$ and solve for $n$, thereby showing that under the Normality assumption the required sample size corresponding to $n_{ Chebyshev }$ in equation (\ref{e:chebyshev-3}) above is
+\begin{equation} \label{e:chebyshev-5}
+n_{ Normality } \ge \frac{ \left[ \Phi^{ -1 } \left( 1 - \frac{ \alpha }{ 2 } \right) \right]^2 }{ k^2 } \, ,
+\end{equation}
+in which (as usual) $\Phi^{ -1 } ( p )$ (for $0 < p < 1$) is the inverse CDF (quantile function) for the standard Normal distribution.
+
+\vspace*{1.1in}
+
+\item[(e)]
+
+Using the table on page 861 of Degroot and Schervish or (better) an online inverse Normal CDF calculator (e.g., there's one provided by \texttt{Wolfram Alpha}), complete the rest of the table below.
+
+\begin{center}
+
+\begin{tabular}{lrc}
+
+\multicolumn{1}{c}{$\alpha$} & \multicolumn{1}{c}{$\frac{ 1 }{ \alpha }$} & $\left[ \Phi^{ -1 } \left( 1 - \frac{ \alpha }{ 2 } \right) \right]^2$ \vspace*{0.025in} \\
+
+\hline
+
+0.1 & 10 & 2.7 \\
+
+0.05 & 20 \\
+
+0.01 & & 6.6 \\
+
+0.005 & \\
+
+0.001 & 1000 
+
+\end{tabular}
+
+\end{center}
+
+\vspace*{1.1in}
+
+\item[(f)]
+
+If the data values $X_1$ really did come from a Normal distribution, would you describe the Chebyshev Inequality sample size calculation as highly conservative, not too conservative, or in between? Explain briefly.
+
+\end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

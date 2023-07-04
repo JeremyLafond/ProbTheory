@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+ 
+\addtolength{\textheight}{2.7in}
+\addtolength{\topmargin}{-1.15in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.65in}
+\setlength{\parskip}{0.1in}
+\setlength{\parindent}{0.0in}
+
+\newcommand{\given}{\, | \,}
+
+\pagestyle{empty}
+
+\raggedbottom
+ 
+\begin{document}
+
+\vspace*{-0.3in}
+
+\begin{flushleft}
+
+Prof.~David Draper \\
+Department of Applied Mathematics and Statistics \\
+University of California, Santa Cruz
+
+\end{flushleft}
+
+\begin{center}
+
+\textbf{\large AMS 131: Quiz 8}
+
+\end{center}
+
+\bigskip
+
+\begin{flushleft}
+
+Name: \underline{\hspace*{5.85in}}
+
+\end{flushleft}
+
+Someone offers you the possibility to play a gambling game with the following rules. First, you decide how much money you're willing to put at risk in this game: this amount --- let's call it $A$ --- is referred to as your \textit{stake} (all the monetary quantities are in dollars in this problem). Having chosen your stake, you're allowed to bet any amount $0 \le B \le A$ (thus, as a decision problem, for any fixed value of $A$, your possible actions in this situation correspond to values of $B$). If you win the bet, which occurs with probability $0 < p < 1$, your stake becomes $( A + B )$; if you lose, it becomes $( A - B )$, and this (of course) occurs with probability $( 1 - p )$; and (crucially) $p$ is known to you. Let $X$ denote the value of your stake after the gamble has occurred, and suppose that you agree with Daniel Bernoulli that a reasonable utility function is $U ( x ) = 1 + \log ( x )$.
+
+\begin{itemize}
+
+\item[(a)]
+
+Write out the probability mass function (PMF) for $X$.
+
+\vspace*{1.1in}
+
+\item[(b)]
+
+Work out your expected utility $E [ U ( X ) ]$ in this game, as a function of $A, B$ and $p$.
+
+\vspace*{1.1in}
+
+\item[(c)]
+
+Intuitively, what should you do (i.e., what value of $B$ should you choose) if $p < \frac{ 1 }{ 2 }$? Explain briefly.
+
+\vspace*{1.1in}
+
+\item[(d)]
+
+Show that when $p \ge \frac{ 1 }{ 2 }$ your expected utility is maximized with the choice $B = ( 2 \, p - 1 ) \, A$. Is this answer intuitively reasonable? Explain briefly.
+
+\end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+ 
+\addtolength{\textheight}{2.7in}
+\addtolength{\topmargin}{-1.15in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.65in}
+\setlength{\parskip}{0.1in}
+\setlength{\parindent}{0.0in}
+
+\newcommand{\given}{\, | \,}
+
+\pagestyle{empty}
+
+\raggedbottom
+ 
+\begin{document}
+
+\vspace*{-0.3in}
+
+\begin{flushleft}
+
+Prof.~David Draper \\
+Department of Applied Mathematics and Statistics \\
+University of California, Santa Cruz
+
+\end{flushleft}
+
+\begin{center}
+
+\textbf{\large AMS 131: Quiz 5}
+
+\end{center}
+
+\bigskip
+
+\begin{flushleft}
+
+Name: \underline{\hspace*{5.85in}}
+
+\end{flushleft}
+
+You're working on a problem involving two continuous random variables $X$ and $Y$, and you figure out that their joint PDF has the following form:
+\begin{equation} \label{joint-pdf}
+f_{ X, Y } ( x, y ) = \left\{ \begin{array}{cc} c \, x^2 & \textrm{for } 0 \le y \le 1 - x^2 \\ 0 & \textrm{otherwise} \end{array} \right\} \, .
+\end{equation}
+
+\begin{itemize}
+
+\item[(a)]
+
+Sketch the support $S$ of this bivariate distribution.
+
+\vspace*{0.9in}
+
+\item[(b)]
+
+Compute the normalizing constant $c$.
+
+\vspace*{0.9in}
+
+\item[(c)]
+
+It can be shown that the marginal PDFs of $X$ and $Y$ with this joint PDF are
+\begin{equation} \label{X-marginal}
+f_X ( x ) = \left\{ \begin{array}{cc} \frac{ 15 }{ 4 } x^2 ( 1 - x^2 ) & \textrm{for } -1 \le x \le 1 \\ 0 & \textrm{otherwise} \end{array} \right\} 
+\end{equation}
+and
+\begin{equation} \label{Y-marginal}
+f_Y ( y ) = \left\{ \begin{array}{cc} \frac{ 5 }{ 2 } ( 1 - y )^{ \frac{ 3 }{ 2 } } & \textrm{for } 0 \le y \le 1 \\ 0 & \textrm{otherwise} \end{array} \right\} \, . 
+\end{equation}
+Verify that both of these marginals are correct.
+
+\vspace*{0.9in}
+
+\item[(d)]
+
+Are $X$ and $Y$ independent in this joint distribution? Explain briefly.
+
+\end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

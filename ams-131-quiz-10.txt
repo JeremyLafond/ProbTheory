@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+ 
+\addtolength{\textheight}{2.7in}
+\addtolength{\topmargin}{-1.15in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.65in}
+\setlength{\parskip}{0.1in}
+\setlength{\parindent}{0.0in}
+
+\newcommand{\given}{\, | \,}
+
+\pagestyle{empty}
+
+\raggedbottom
+ 
+\begin{document}
+
+\vspace*{-0.3in}
+
+\begin{flushleft}
+
+Prof.~David Draper \\
+Department of Applied Mathematics and Statistics \\
+University of California, Santa Cruz
+
+\end{flushleft}
+
+\begin{center}
+
+\textbf{\large AMS 131: Quiz 10}
+
+\end{center}
+
+\bigskip
+
+\begin{flushleft}
+
+Name: \underline{\hspace*{5.85in}}
+
+\end{flushleft}
+
+Three friends --- let's call them $X$, $Y$, and $Z$ --- like to play pool (pocket billiards). There are some pool games that involve three players, but these people like to play \textit{9-ball}, which is a game between two players with the property that a tie is not possible (there's always a winner and a loser in any given round). Since it's not possible for all three of these friends to play at the same time, they use a simple rule to decide who plays in the next round: \textit{loser sits down}. For example, suppose that, in round 1, $X$ and $Y$ play; then if $X$ wins, $Y$ sits down and the next game is between $X$ and $Z$. Question: in the long run, which two players square off against each other most often? Least often?
+
+So far what I've described is completely realistic, but now we need to make a (strong) simplifying assumption. In practice people get tired and/or discouraged, so the probability that (say) $X$ beats $Y$ in any single round is probably not constant in time, but let's pretend it is, to get a kind of baseline analysis: let $0 < p_{ X Y } < 1$ be the probability that $X$ beats $Y$ in any given game, and define $0 < p_{ X Z } < 1$ and $0 < p_{ Y Z } < 1$ correspondingly. Consider the stochastic process $\mathcal{ P }$ that keeps track of which pair of people are playing in round $n = 1, 2, \dots$
+
+\begin{itemize}
+
+\item[(a)]
+
+If we take the state space of this process to be $S = \{ ( X Y ), ( X Z ), ( Y Z ) \}$, in which (for example) $( X Z )$ means that $X$ and $Z$ are playing each other in a particular round, briefly explain why $\mathcal{ P }$ is a time-homogeneous Markov chain.
+
+\vspace*{1.0in}
+
+\item[(b)]
+
+Briefly explain why the one-step transition matrix $P$ for this Markov chain is
+\begin{equation} \label{transition-matrix-1}
+P = \left[ \begin{array}{ccc} 
+0 & p_{ X Y } & ( 1 - p_{ X Y } ) \\
+p_{ X Z } & 0 & ( 1 - p_{ X Z } ) \\
+p_{ Y Z } & ( 1 - p_{ Y Z } ) & 0
+\end{array} 
+\right]
+\end{equation}
+when the rows of this matrix describe transitioning \underline{\textit{from}} one of states $\{ ( X Y ), ( X Z ),$ $( Y Z ) \}$ (in that order) at time $n$ and the columns describe transitioning \underline{\textit{to}} one of the states (in the same order) at time $( n + 1 )$.
+
+\vspace*{1.0in}
+
+\item[(c)]
+
+Suppose that $X$ is the best player, followed not far behind by $Y$, and $Z$ usually doesn't win; for example, take $( p_{ XY }, p_{ XZ }, p_{ YZ } ) = ( 0.6, 0.975, 0.95 )$. Do an eigen-analysis to show that the equilibrium distribution of the resulting Markov chain is $v = ( 0.491, 0.305, 0.204 )$. Verify that this is indeed the equilibrium distribution by showing that $v \, P = v$.
+
+\vspace*{2.0in}
+
+\item[(d)]
+
+Briefly interpret the equilibrium distribution in part (c) (e.g., the pair of players that's most often at the table playing each other is~..., followed by~..., and the least frequent pair is~...). Does this distribution make good intuitive sense, given the vector $( p_{ XY }, p_{ XZ }, p_{ YZ } )$ in part (c)? Explain briefly.
+
+\vspace*{2.0in}
+
+\item[(e)]
+
+Suppose (instead of the situation in part (c)) that the players are all about equally good. What do you expect intuitively that the equilibrium distribution will be? Explain briefly, and do the eigen-analysis to verify your conjecture.
+
+\end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

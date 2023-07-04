@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+ 
+\addtolength{\textheight}{2.0in}
+\addtolength{\topmargin}{-1.15in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.5in}
+\setlength{\parskip}{0.1in}
+\setlength{\parindent}{0.0in}
+
+\pagestyle{empty}
+
+\raggedbottom
+ 
+\begin{document}
+
+\vspace*{0.1in}
+
+\begin{flushleft}
+
+Prof.~David Draper \\
+Department of \\ 
+\hspace*{0.1in} Applied Mathematics and Statistics \\
+University of California, Santa Cruz
+
+\end{flushleft}
+
+\begin{center}
+
+\textbf{\large AMS 131: Quiz 2}
+
+\end{center}
+
+\bigskip
+
+\begin{flushleft}
+
+Name: \underline{\hspace*{5.0in}}
+
+\end{flushleft}
+
+(You can use another page if necessary in any or all parts of the
+problems.)
+
+1.~Each year starts on one of the seven days (Sunday through Saturday). Each year is either a leap year (i.e., it includes February 29) or not. How many different calendars are possible for a year? Explain briefly.
+
+\vspace*{1.5in}
+
+2.~A box contains 100 balls, of which $r$ are red. Suppose that the balls are drawn from the box one at a time, at random \textbf{without replacement}. Determine
+\begin{itemize}
+
+\item[(a)] 
+
+the probability that the first ball drawn will be red; 
+
+\item[(b)] 
+
+the probability that the 50th ball drawn will be red; and 
+
+\item[(c)] 
+
+the probability that the last ball drawn will be red.
+
+\end{itemize}
+
+Explain briefly in each case. \textit{Hint:} Imagine that the 100 balls are randomly ordered in a list, and then drawn in that order, which is equivalent to sampling at random without replacement. \textit{Further Hint:} When choosing a sample $( Y_1, Y_2 )$ of size 2 at random without replacement from the population $\{ 1, 2, 7 \}$ in class on Monday, what was the relationship between $P ( Y_1 = 7 )$ and $P ( Y_2 = 7 )$?
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
